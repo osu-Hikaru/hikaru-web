@@ -1,0 +1,17 @@
+#content {
+  font-family: Roboto;
+  margin-right: 25%;
+  margin-left: 25%;
+  width: 50%;
+  text-align: center;
+  display: block;
+  text-overflow: ellipsis;
+}
+
+code.error {
+  line-height: 2rem;
+  font-size: 2rem;
+  color: #f43;
+  padding: 2rem;
+  display: block;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome on Hikaru!</title>
+
+    <meta charset="UTF-8" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#7df8ff" />
+    <meta property="og:site_name" content="Hikaru &#187; news" />
+
+    <meta property="og:title" content="Welcome on Hikaru!" />
+    <meta
+      property="og:description"
+      content="A general overview of the Hikaru Private Server!"
+    />
+    <meta
+      property="og:url"
+      content="https://osu.hikaru.pw/home/news/welcome-on-hikaru/"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+
+    <script
+      type="application/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.8.2/marked.min.js"
+    ></script>
+    <script src="/loadMarkdown.js"></script>
+    <script defer>
+      pull
+        .then((text) => set(marked(text)))
+        .catch((err) =>
+          set(
+            `<code class="error">Failed to load ${FILENAME}: ${err.message}</code>`
+          )
+        );
+    </script>
+
+    <style rel="stylesheet" type="text/css" href="/style.css"></style>
+  </head>
+  <body>
+    <div>
+      <div id="content"></div>
+    </div>
+  </body>
+</html>

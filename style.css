@@ -1,11 +1,30 @@
-#content {
+body {
   font-family: Roboto;
+}
+
+#content {
   margin-right: 25%;
   margin-left: 25%;
   width: 50%;
   text-align: center;
   display: block;
   text-overflow: ellipsis;
+}
+
+#development_warning {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #ff2617;
+  text-align: center;
+  font-weight: bold;
+}
+
+#development_warning_link {
+  color: #086fff;
 }
 
 code.error {

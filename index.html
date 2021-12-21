@@ -12,7 +12,6 @@ Copyright (C) 2021 Hikaru Team <copyright@hikaru.pw>
     <meta charset="UTF-8" />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#7df8ff" />
-    <meta property="og:site_name" content="Hikaru &#187; news" />
 
     <meta property="og:title" content="welcome | Hikaru" />
     <meta property="og:description" content="The Hikaru main page." />
@@ -23,8 +22,34 @@ Copyright (C) 2021 Hikaru Team <copyright@hikaru.pw>
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
+
+    <script
+      type="application/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+
+    <script type="application/javascript" src="/main_scripts.js" defer></script>
   </head>
   <body>
-    Yes.
+    <div class="container">
+      <div class="Navbar">
+        <div id="login_menu">Guest</div>
+      </div>
+      <div class="Content"></div>
+      <div class="LeftMenu">
+        <div id="login_menu-expanded">
+          <form id="user_login">
+            <label for="username">Username</label>
+            <input type="text" id="username" /><br />
+            <label for="password">Password</label>
+            <input type="password" />
+            <input type="submit" value="Submit"></submit>
+          </form>
+          
+          <p>Don't have an account? Download the <a href="https://a.hikaru.pw/game-client/download.zip">Hikaru Client</a> to create one!</p>
+        </div>
+      </div>
+      <div class="RightMenu"></div>
+    </div>
   </body>
 </html>
